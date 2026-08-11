@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kaka ❤️</title>
+<style>
+body{margin:0;font-family:'Trebuchet MS',sans-serif;background:linear-gradient(135deg,#ffd6e8,#fff0f7,#f6ddff);color:#5b2140}
+.section{padding:70px 20px;max-width:1100px;margin:auto}
+.center{text-align:center}
+.card{background:white;border-radius:25px;padding:25px;box-shadow:0 10px 30px rgba(0,0,0,.08);margin:15px 0}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.btn{padding:14px 24px;border:none;border-radius:30px;cursor:pointer;font-size:18px}
+.yes{background:#ff4f96;color:#fff}
+.no{background:#ddd;position:absolute}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.photo{background:white;border-radius:20px;padding:10px;text-align:center}
+.photo img{width:100%;height:220px;object-fit:cover;border-radius:15px}
+.hidden{display:none}
+.timeline .card{border-left:6px solid #ff4f96}
+.reason{padding:12px;background:white;border-radius:12px;margin:8px}
+#gift{font-size:100px;cursor:pointer}
+.float{position:fixed;animation:up linear infinite}
+@keyframes up{from{transform:translateY(100vh)}to{transform:translateY(-120px)}}
+</style>
+</head>
+<body>
+
+<div id="start" class="hero">
+<h1>💖 Do You Want To Open Your Birthday Surprise, Kaka? 💖</h1>
+<div style="position:relative;height:120px;width:320px">
+<button class="btn yes" onclick="showCode()">Yes, Of Course ❤️</button>
+<button class="btn no" id="noBtn">No</button>
+</div>
+<p id="funny"></p>
+</div>
+
+<div id="codePage" class="hero hidden">
+<div class="card">
+<h2>🔐 Birthday Security Check</h2>
+<p>Only the Birthday Queen may enter 👑</p>
+<input id="code" placeholder="Enter Secret Code 2516">
+<button class="btn yes" onclick="unlock()">Unlock ❤️</button>
+<p id="msg"></p>
+</div>
+</div>
+
+<div id="site" class="hidden">
+<section class="hero">
+<h1>🎂 Happy Birthday Kaka ❤️👑</h1>
+<h3>To my favorite person, my happiness, and my entire world.</h3>
+<p>🧸 ✨ 🌹 💕 🎁 💖 👑</p>
+</section>
+
+<section class="section">
+<div class="card">
+<h2>💖 Happy Birthday My Kaka 💖</h2>
+<p><b>My Dearest Kaka,</b></p>
+<p>Happy Birthday to the most beautiful girl, the kindest soul, and the most precious person in my life. ❤️🎂👑</p>
+<p>Today is your special day, but honestly, every day feels special because you are part of my life.</p>
+<p>As I sit here writing this message, I find it difficult to put my feelings into words because no matter how much I write, it never feels enough to describe how much you mean to me.</p>
+<p>You are not just someone I love. You are my comfort. You are my happiness. You are my peace.</p>
+<p>Whenever something good happens, you are one of the first people I want to tell. Whenever something goes wrong, you are one of the first people I think about because I know you'll always stand by me.</p>
+<p><b>❤️ Thank You ❤️</b></p>
+<p>Thank you for always standing beside me no matter what situation we faced. Thank you for supporting me when things were difficult. Thank you for believing in me even during the times when I doubted myself.</p>
+<p>Thank you for motivating me when I felt tired, encouraging me when I felt lost, listening to me when I needed someone, understanding me when I couldn't explain myself, and accepting me with all my flaws and imperfections.</p>
+<p>Most importantly... thank you for never giving up on us.</p>
+<p><b>🕰️ Our Journey</b></p>
+<p>I still remember November 9, 2025 — the day I sent that first message.</p>
+<p>Then came November 12, 2025 — the day you replied. That same day we started talking around 11:00 PM and before we knew it, it was almost 3:00 AM.</p>
+<p>That night was the beginning of something beautiful — a story that is still being written.</p>
+<p><b>❤️ Through Every Difficulty</b></p>
+<p>Our relationship wasn't always easy. We've had misunderstandings, arguments, and challenges. But despite everything, we stayed. Despite every difficulty, we chose each other. Despite every fight, we found our way back.</p>
+<p><b>🤲 Thank You For Your Prayers</b></p>
+<p>Thank you for every prayer you made for me and for us. Knowing that someone sincerely asks Allah for your happiness, success, protection, and future is one of the purest forms of love.</p>
+<p>Your prayers have always made me feel cared for and reminded me that someone genuinely wants good things for me.</p>
+<p><b>🌹 What You Mean To Me</b></p>
+<p>You have become such an important part of my life that it is difficult to imagine my days without you. You are the reason behind countless smiles and beautiful memories.</p>
+<p>Your happiness matters to me. Your dreams matter to me. Your feelings matter to me. Because you matter to me more than you probably realize.</p>
+<p><b>🎂 Birthday Wish</b></p>
+<p>On your birthday, I pray that Allah blesses you with happiness that never fades, protects you from every sadness, fills your life with peace, success, health, and countless blessings, and makes every dream in your heart come true.</p>
+<p><b>❤️ One Last Thing</b></p>
+<p>If I could go back to November 9, 2025, I would still send that first message. If I could go back to November 12, 2025, I would still wait for your reply.</p>
+<p>If I could relive every memory we've created, I would do it all over again, because every step of this journey led me to you.</p>
+<p>Happy Birthday, Kaka. ❤️🎂👑</p>
+<p>Thank you for being my support, my happiness, my best friend, and one of the most beautiful parts of my life.</p>
+<p>I hope your birthday is filled with love, laughter, happiness, cake, gifts, beautiful memories, and everything your heart wishes for.</p>
+<p><b>Happy Birthday, My Kaka. ❤️✨🌹</b></p></div>
+</section>
+
+<section class="section">
+<h2 class="center">📸 Our Memories Gallery</h2>
+<div class="gallery">
+<div class="photo"><img src="https://placehold.co/400x400?text=Add+Your+Photo"><p>First Memory ❤️</p></div>
+<div class="photo"><img src="https://placehold.co/400x400?text=Add+Your+Photo"><p>Favorite Selfie 📷</p></div>
+<div class="photo"><img src="https://placehold.co/400x400?text=Add+Your+Photo"><p>Funniest Moment 😂</p></div>
+<div class="photo"><img src="https://placehold.co/400x400?text=Add+Your+Photo"><p>Birthday Memory 🎂</p></div>
+</div>
+</section>
+
+<section class="section timeline">
+<h2 class="center">🕰️ Our Journey</h2>
+<div class="card">❤️ The Day We Met</div>
+<div class="card">🌙 Our First Long Conversation</div>
+<div class="card">😂 Our Funniest Memory</div>
+<div class="card">🎂 Your Birthday</div>
+</section>
+
+<section class="section">
+<h2 class="center">💖 Reasons You're Amazing</h2>
+<div class="reason">1. Your smile.</div>
+<div class="reason">2. Your laugh.</div>
+<div class="reason">3. Your kindness.</div>
+<div class="reason">4. Your caring heart.</div>
+<div class="reason">5. The way you make me happy.</div>
+<div class="reason">6. Because you're you.</div>
+</section>
+
+<section class="section">
+<div class="card center">
+<h2>😂 Kaka's Official Statistics</h2>
+<p>Cuteness: 1000%</p>
+<p>Beauty: Infinite ♾️</p>
+<p>Kindness: Unlimited ❤️</p>
+<p>Stealing Hearts: Professional 😌</p>
+</div>
+</section>
+
+<section class="section center">
+<h2>🎁 Secret Gift</h2>
+<div id="gift" onclick="gift()">🎁</div>
+<p id="giftmsg"></p>
+</section>
+
+<footer class="center section">
+<h2>❤️ Happy Birthday Kaka ❤️</h2>
+<p>Made with love for the most special girl.</p>
+</footer>
+</div>
+
+<script>
+const no=document.getElementById('noBtn');
+const msgs=["Nice try 😂","No isn't available today ❤️","Wrong choice 😌","Try Yes 👑"];
+no.addEventListener('mouseover',()=>{
+ no.style.left=Math.random()*250+'px';
+ no.style.top=Math.random()*80+'px';
+ document.getElementById('funny').innerText=msgs[Math.floor(Math.random()*msgs.length)];
+});
+
+function showCode(){
+ document.getElementById('start').classList.add('hidden');
+ document.getElementById('codePage').classList.remove('hidden');
+}
+
+function unlock(){
+ if(document.getElementById('code').value==="2516"){
+  document.getElementById('codePage').classList.add('hidden');
+  document.getElementById('site').classList.remove('hidden');
+ }else{
+  document.getElementById('msg').innerText="Wrong code 😄";
+ }
+}
+
+function gift(){
+ document.getElementById('giftmsg').innerHTML="🎉 Congratulations Kaka!<br>Unlimited Love ❤️<br>Unlimited Hugs 🤗<br>Unlimited Support 🌹<br>Permanent ownership of my heart ❤️";
+}
+
+for(let i=0;i<40;i++){
+ let e=document.createElement('div');
+ e.className='float';
+ e.innerHTML=['❤️','🧸','✨','💕'][Math.floor(Math.random()*4)];
+ e.style.left=Math.random()*100+'vw';
+ e.style.fontSize=(16+Math.random()*20)+'px';
+ e.style.animationDuration=(5+Math.random()*6)+'s';
+ document.body.appendChild(e);
+}
+</script>
+</body>
+</html>
